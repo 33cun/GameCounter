@@ -1,0 +1,6 @@
+framework module Pods_XXGameCounter {
+  umbrella header "Pods-XXGameCounter-umbrella.h"
+
+  export *
+  module * { export * }
+}

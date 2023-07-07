@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+
+target 'XXGameCounter' do
+  use_frameworks!
+  
+  pod 'Masonry'
+  
+end

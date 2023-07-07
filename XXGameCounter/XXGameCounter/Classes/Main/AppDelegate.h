@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  XXGameCounter
 //
-//  Created by Xia on 2023/7/7.
+//  Created by XX on 2023/7/7.
 //
 
 #import <UIKit/UIKit.h>
