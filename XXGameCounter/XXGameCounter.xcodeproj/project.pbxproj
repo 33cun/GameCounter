@@ -14,6 +14,9 @@
 		16BE31352A57F11C002A1B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BE31342A57F11C002A1B28 /* Assets.xcassets */; };
 		16BE31382A57F11C002A1B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16BE31362A57F11C002A1B28 /* LaunchScreen.storyboard */; };
 		16BE313B2A57F11C002A1B28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BE313A2A57F11C002A1B28 /* main.m */; };
+		16BE314B2A57F278002A1B28 /* XXHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BE314A2A57F278002A1B28 /* XXHomeVC.m */; };
+		16BE314F2A57F3B3002A1B28 /* XXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BE314E2A57F3B3002A1B28 /* XXTabBarController.m */; };
+		16D417092A580023000AFDB5 /* XXSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D417082A580023000AFDB5 /* XXSettingVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		16BE31372A57F11C002A1B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16BE31392A57F11C002A1B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16BE313A2A57F11C002A1B28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16BE31492A57F278002A1B28 /* XXHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXHomeVC.h; sourceTree = "<group>"; };
+		16BE314A2A57F278002A1B28 /* XXHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXHomeVC.m; sourceTree = "<group>"; };
+		16BE314D2A57F3B3002A1B28 /* XXTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXTabBarController.h; sourceTree = "<group>"; };
+		16BE314E2A57F3B3002A1B28 /* XXTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXTabBarController.m; sourceTree = "<group>"; };
+		16D417072A580023000AFDB5 /* XXSettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXSettingVC.h; sourceTree = "<group>"; };
+		16D417082A580023000AFDB5 /* XXSettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXSettingVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,78 @@
 		16BE31272A57F11A002A1B28 /* XXGameCounter */ = {
 			isa = PBXGroup;
 			children = (
+				16BE31412A57F22B002A1B28 /* Classes */,
+			);
+			path = XXGameCounter;
+			sourceTree = "<group>";
+		};
+		16BE31412A57F22B002A1B28 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				16BE31482A57F22B002A1B28 /* Main */,
+				16BE31472A57F22B002A1B28 /* Other */,
+				16BE31462A57F22B002A1B28 /* Tools */,
+				16BE31422A57F22B002A1B28 /* Home */,
+				16D417032A580000000AFDB5 /* Setting */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		16BE31422A57F22B002A1B28 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				16BE31432A57F22B002A1B28 /* UI */,
+				16BE31442A57F22B002A1B28 /* Service */,
+				16BE31452A57F22B002A1B28 /* Data */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		16BE31432A57F22B002A1B28 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		16BE31442A57F22B002A1B28 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				16BE31492A57F278002A1B28 /* XXHomeVC.h */,
+				16BE314A2A57F278002A1B28 /* XXHomeVC.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		16BE31452A57F22B002A1B28 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		16BE31462A57F22B002A1B28 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		16BE31472A57F22B002A1B28 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				16BE31342A57F11C002A1B28 /* Assets.xcassets */,
+				16BE31362A57F11C002A1B28 /* LaunchScreen.storyboard */,
+				16BE31392A57F11C002A1B28 /* Info.plist */,
+				16BE313A2A57F11C002A1B28 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		16BE31482A57F22B002A1B28 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				16BE314C2A57F399002A1B28 /* Base */,
 				16BE31282A57F11A002A1B28 /* AppDelegate.h */,
 				16BE31292A57F11A002A1B28 /* AppDelegate.m */,
 				16BE312B2A57F11A002A1B28 /* SceneDelegate.h */,
@@ -68,12 +149,50 @@
 				16BE312E2A57F11A002A1B28 /* ViewController.h */,
 				16BE312F2A57F11A002A1B28 /* ViewController.m */,
 				16BE31312A57F11A002A1B28 /* Main.storyboard */,
-				16BE31342A57F11C002A1B28 /* Assets.xcassets */,
-				16BE31362A57F11C002A1B28 /* LaunchScreen.storyboard */,
-				16BE31392A57F11C002A1B28 /* Info.plist */,
-				16BE313A2A57F11C002A1B28 /* main.m */,
 			);
-			path = XXGameCounter;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		16BE314C2A57F399002A1B28 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				16BE314D2A57F3B3002A1B28 /* XXTabBarController.h */,
+				16BE314E2A57F3B3002A1B28 /* XXTabBarController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		16D417032A580000000AFDB5 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				16D417062A580011000AFDB5 /* Service */,
+				16D417052A58000D000AFDB5 /* Data */,
+				16D417042A580008000AFDB5 /* UI */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		16D417042A580008000AFDB5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				16D417072A580023000AFDB5 /* XXSettingVC.h */,
+				16D417082A580023000AFDB5 /* XXSettingVC.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		16D417052A58000D000AFDB5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		16D417062A580011000AFDB5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				16BE31302A57F11A002A1B28 /* ViewController.m in Sources */,
+				16BE314F2A57F3B3002A1B28 /* XXTabBarController.m in Sources */,
+				16BE314B2A57F278002A1B28 /* XXHomeVC.m in Sources */,
 				16BE312A2A57F11A002A1B28 /* AppDelegate.m in Sources */,
+				16D417092A580023000AFDB5 /* XXSettingVC.m in Sources */,
 				16BE313B2A57F11C002A1B28 /* main.m in Sources */,
 				16BE312D2A57F11A002A1B28 /* SceneDelegate.m in Sources */,
 			);
@@ -296,7 +418,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7323B9G3V3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = XXGameCounter/Info.plist;
+				INFOPLIST_FILE = XXGameCounter/Classes/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +445,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7323B9G3V3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = XXGameCounter/Info.plist;
+				INFOPLIST_FILE = XXGameCounter/Classes/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

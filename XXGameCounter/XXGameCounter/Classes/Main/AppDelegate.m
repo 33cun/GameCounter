@@ -7,6 +7,9 @@
 
 #import "AppDelegate.h"
 
+#import "XXTabBarController.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -15,7 +18,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    if (@available(iOS 13.0, *)) {
+        
+    } else {
+        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        [self.window setBackgroundColor:[UIColor whiteColor]];
+        
+        XXTabBarController *tabbar = [[XXTabBarController alloc] init];
+        
+        [self.window setRootViewController:tabbar];
+        [self.window makeKeyAndVisible];
+    }
+    
     return YES;
 }
 
