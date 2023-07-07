@@ -7,6 +7,7 @@
 
 #import "XXTabBarController.h"
 
+#import "XXNavigationController.h"
 #import "XXHomeVC.h"
 #import "XXSettingVC.h"
 
@@ -41,7 +42,7 @@
     
     child.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:[UIImage systemImageNamed:image] selectedImage:selectImage];
     
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:child];
+    XXNavigationController *navi = [[XXNavigationController alloc] initWithRootViewController:child];
     
     return navi;
 }
