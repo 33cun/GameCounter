@@ -4,5 +4,6 @@ target 'XXGameCounter' do
   use_frameworks!
   
   pod 'Masonry'
+  pod 'YYImage'
   
 end

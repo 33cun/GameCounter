@@ -9,5 +9,10 @@
 #define PrefixHeader_pch
 
 #import <Masonry/Masonry.h>
+#import <YYImage/YYImage.h>
+
+#import "UIColor+Tools.h"
+#import "UIImage+Tools.h"
+
 
 #endif /* PrefixHeader_pch */

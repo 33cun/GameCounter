@@ -19,6 +19,9 @@
 		16D417092A580023000AFDB5 /* XXSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D417082A580023000AFDB5 /* XXSettingVC.m */; };
 		16D4170D2A58076C000AFDB5 /* XXGameCounterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D4170C2A58076C000AFDB5 /* XXGameCounterVC.m */; };
 		16D417102A580A04000AFDB5 /* XXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D4170F2A580A04000AFDB5 /* XXNavigationController.m */; };
+		16D417132A581359000AFDB5 /* XXCounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D417122A581359000AFDB5 /* XXCounterView.m */; };
+		16D417162A581D9C000AFDB5 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D417152A581D9C000AFDB5 /* UIColor+Tools.m */; };
+		16D417192A581E3B000AFDB5 /* UIImage+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D417182A581E3B000AFDB5 /* UIImage+Tools.m */; };
 		4470ECB66B16DDF6EBE50280 /* Pods_XXGameCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48DC3712EC7BBCC65A0D1AB /* Pods_XXGameCounter.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,12 @@
 		16D4170C2A58076C000AFDB5 /* XXGameCounterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXGameCounterVC.m; sourceTree = "<group>"; };
 		16D4170E2A580A04000AFDB5 /* XXNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXNavigationController.h; sourceTree = "<group>"; };
 		16D4170F2A580A04000AFDB5 /* XXNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXNavigationController.m; sourceTree = "<group>"; };
+		16D417112A581359000AFDB5 /* XXCounterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXCounterView.h; sourceTree = "<group>"; };
+		16D417122A581359000AFDB5 /* XXCounterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXCounterView.m; sourceTree = "<group>"; };
+		16D417142A581D9C000AFDB5 /* UIColor+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		16D417152A581D9C000AFDB5 /* UIColor+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		16D417172A581E3B000AFDB5 /* UIImage+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tools.h"; sourceTree = "<group>"; };
+		16D417182A581E3B000AFDB5 /* UIImage+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tools.m"; sourceTree = "<group>"; };
 		315BBBB7E26CFAA768C6AF82 /* Pods-XXGameCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXGameCounter.debug.xcconfig"; path = "Target Support Files/Pods-XXGameCounter/Pods-XXGameCounter.debug.xcconfig"; sourceTree = "<group>"; };
 		BB7F43895FCEA60563B099CB /* Pods-XXGameCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXGameCounter.release.xcconfig"; path = "Target Support Files/Pods-XXGameCounter/Pods-XXGameCounter.release.xcconfig"; sourceTree = "<group>"; };
 		E48DC3712EC7BBCC65A0D1AB /* Pods_XXGameCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXGameCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +123,8 @@
 		16BE31432A57F22B002A1B28 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				16D417112A581359000AFDB5 /* XXCounterView.h */,
+				16D417122A581359000AFDB5 /* XXCounterView.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -139,6 +150,10 @@
 		16BE31462A57F22B002A1B28 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				16D417142A581D9C000AFDB5 /* UIColor+Tools.h */,
+				16D417152A581D9C000AFDB5 /* UIColor+Tools.m */,
+				16D417172A581E3B000AFDB5 /* UIImage+Tools.h */,
+				16D417182A581E3B000AFDB5 /* UIImage+Tools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -194,8 +209,6 @@
 		16D417042A580008000AFDB5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				16D417072A580023000AFDB5 /* XXSettingVC.h */,
-				16D417082A580023000AFDB5 /* XXSettingVC.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -210,6 +223,8 @@
 		16D417062A580011000AFDB5 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				16D417072A580023000AFDB5 /* XXSettingVC.h */,
+				16D417082A580023000AFDB5 /* XXSettingVC.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -347,13 +362,16 @@
 			files = (
 				16BE31302A57F11A002A1B28 /* ViewController.m in Sources */,
 				16BE314F2A57F3B3002A1B28 /* XXTabBarController.m in Sources */,
+				16D417162A581D9C000AFDB5 /* UIColor+Tools.m in Sources */,
 				16BE314B2A57F278002A1B28 /* XXHomeVC.m in Sources */,
 				16BE312A2A57F11A002A1B28 /* AppDelegate.m in Sources */,
 				16D417092A580023000AFDB5 /* XXSettingVC.m in Sources */,
 				16BE313B2A57F11C002A1B28 /* main.m in Sources */,
+				16D417192A581E3B000AFDB5 /* UIImage+Tools.m in Sources */,
 				16D417102A580A04000AFDB5 /* XXNavigationController.m in Sources */,
 				16BE312D2A57F11A002A1B28 /* SceneDelegate.m in Sources */,
 				16D4170D2A58076C000AFDB5 /* XXGameCounterVC.m in Sources */,
+				16D417132A581359000AFDB5 /* XXCounterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +524,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -535,6 +554,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

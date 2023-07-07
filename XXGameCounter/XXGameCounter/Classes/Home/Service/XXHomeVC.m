@@ -21,8 +21,7 @@
 // MARK: - Life Cycle
 - (instancetype)init {
     if (self = [super init]) {
-        [self setupUI];
-        [self setupData];
+        
     }
     
     return self;
@@ -32,6 +31,9 @@
     [super viewDidLoad];
     
 //    self.view.backgroundColor = [UIColor cyanColor];
+    
+    [self setupUI];
+    [self setupData];
 }
 
 
